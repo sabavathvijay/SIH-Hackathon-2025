@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: #333;
+}
+
+#webcam-container {
+    border: 5px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    overflow: hidden; /* This hides the parts of the video that overflow */
+    width: 400px;
+    height: 400px;
+}
+
+#label-container {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 3em; /* BIG TEXT */
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    width: 360px; /* 400px minus padding */
+    transition: background-color 0.3s ease;
+}
+
+/* These are the "result" styles we will add with JavaScript */
+.recycle {
+    background-color: #2a9d8f; /* Green */
+}
+.compost {
+    background-color: #8a5a44; /* Brown */
+}
+.landfill {
+    background-color: #495057; /* Dark Gray */
+}
+.waiting {
+    background-color: #ced4da; /* Light Gray */
+}
+
+.container{
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+    background-color: rgba(0, 255, 255, 0.003);
+    border-radius: 15px;
+}
+body{
+
+     margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+    background:url(./image/BG.jpg) no-repeat; 
+    background-size: 100% 100%;
+}
+
+#webcam-container{
+    background:url(./image/Eye.jpg) no-repeat;
+     background-size: 100% 100%;
+     border: solid grey;
+}
+#webcam-container:hover{
+    transform: scale(1.1);
+    margin-bottom: 30px;
+     border: solid rgba(39, 53, 159, 0.614);
+    
+}
+#label-container{
+    background:url(./image/class\ bg.jpg) no-repeat;
+     background-size: 100% 100%;
+     color: #333;
+    z-index: 3;
+}
+#label-container:hover{
+  background:url(./image/class\ bg.jpg) no-repeat;
+     background-size: 100% 100%;
+
+}
+.container h1{
+    color: blue;
+    background-color: #f0f0f0;
+    text-align: center;
+    border-radius: 15px;
+    padding: 20px;
+
+}
+.container p{
+     text-align: center;
+    border-radius: 15px;
+    padding: 20px;
+     color: rgb(3, 5, 31);
+     text-shadow: 5px 5px 6px rgba(42, 42, 31, 0.864);
+    background-color: #368e90be;
+    margin-bottom: 30px;
+    font-size: 24px;
+
+}
+
+#webcam-container{
+   
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+#webcam-container .circle{
+    width: 90Px;
+    height: 126px;
+    border: solid 10px #011f3d38;
+    border-radius: 53%;
+    position: absolute;
+    top: 25%;
+    left: 34%;
+
+}
+.circle:hover{
+    transform: scale(0.9);
+    background-color: #292f3576;
+}
