@@ -87,7 +87,7 @@ body{
 
 }
 .container h1{
-    color: rgb(0, 255, 60);
+    color: rgb(21, 132, 114);
     background-color: #f0f0f0;
     text-align: center;
     border-radius: 15px;
@@ -98,9 +98,9 @@ body{
      text-align: center;
     border-radius: 15px;
     padding: 20px;
-     color: rgb(3, 5, 31);
+     color: rgb(205, 205, 212);
      text-shadow: 5px 5px 6px rgba(42, 42, 31, 0.864);
-    background-color: #368e90be;
+    background-color: #4e2e55be;
     margin-bottom: 30px;
     font-size: 24px;
 
@@ -139,73 +139,167 @@ body{
     background-size: 100vh 100%;
 }
 
-  .container{
-    margin: 80px;
+
+
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-left: 10px;
+}
+.container{
+    width: 70%;
+}
+
+h1 {
+    color: #333;
+}
+
+#webcam-container {
+    border: 5px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    overflow: hidden; /* This hides the parts of the video that overflow */
+    width: 400px;
+    height: 400px;
+}
+
+#label-container {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 3em; /* BIG TEXT */
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    width: 360px; /* 400px minus padding */
+    transition: background-color 0.3s ease;
+}
+
+/* These are the "result" styles we will add with JavaScript */
+.recycle {
+    background-color: #2a9d8f; /* Green */
+}
+.compost {
+    background-color: #8a5a44; /* Brown */
+}
+.landfill {
+    background-color: #495057; /* Dark Gray */
+}
+.waiting {
+    background-color: #ced4da; /* Light Gray */
+}
+
+.container{
+    margin: 0px;
     border: 0px;
     box-sizing: border-box;
-    background-color: rgba(23, 25, 25, 0.003);
+    background-color: rgba(0, 255, 255, 0.003);
     border-radius: 15px;
-    padding-top: 20px;
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    border-radius: solid blue;
+    justify-content: center;
+    align-items: center;
+}
+body{
+
+     margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+    background:url(./image/BG.jpg) no-repeat fixed; 
+    background-size: 100% 100%;
+}
+
+#webcam-container{
+    background:url(./image/Eye.jpg) no-repeat;
+     background-size: 100% 100%;
+     border: solid grey;
+}
+#webcam-container:hover{
+    transform: scale(1.1);
+    margin-bottom: 30px;
+     border: solid rgba(39, 53, 159, 0.614);
+    
+}
+#label-container{
+    background:url(./image/class\ bg.jpg) no-repeat;
+     background-size: 100% 100%;
+     color: #333;
+    z-index: 3;
+}
+#label-container:hover{
+  background:url(./image/class\ bg.jpg) no-repeat;
+     background-size: 100% 100%;
+
+}
+.container h1{
+    color: rgb(21, 132, 114);
+    background-color: #f0f0f0;
+    text-align: center;
+    border-radius: 15px;
+    padding: 20px;
+    margin: ;
+
+}
+.container p{
+    width: 70%;
+     text-align: center;
+    border-radius: 15px;
+    padding: 20px;
+     color: rgb(231, 231, 235);
+     text-shadow: 5px 5px 6px rgba(42, 42, 31, 0.864);
+    background-color: #4e2e55be;
+    margin-bottom: 30px;
+    font-size: 24px;
 
 }
 
 #webcam-container{
-   
-    width: 80%;
+    width: 70%;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    align-self: center;
-    
+    justify-content: center;
+    align-items: center;
 }
 #webcam-container .circle{
-    width: 40Px;
-    height: 6px;
+    width: 90Px;
+    height: 126px;
     border: solid 10px #011f3d38;
     border-radius: 53%;
     position: absolute;
+    display: none;
     top: 25%;
     left: 34%;
-    display: none;
 
 }
-.container h1{
-    width: 70%;
-    display: flex;
-    justify-self: center;
-    align-self: center;
-    margin-left: 20%;
-    margin-right: 15%;
-    margin-top: 20%;
-    padding-left:50px ;
-    padding-right: 10px;
-    background-color: #79515188;
+.circle:hover{
+    transform: scale(0.9);
+    background-color: #292f3576;
 }
 
-.container p{
-    width: 70%;
-    display: flex;
-    justify-self: center;
-    align-self: center;
-    margin-left: 25%;
-    margin-right: 15%;
-    font-size: larger;
-    color:#d8dbdf;
-    text-shadow: 8px 8px 7px rgb(89, 137, 167);
+#label-container{
+        width: 70%;
+        font-size: larger;
 
 }
 
-.container #label-container{
-    width: 70%;
-    justify-self: center;
-    margin-bottom: 30px;
-    font-size: large;
-}
+
+
+
+
+
+
+
+
     
 }
