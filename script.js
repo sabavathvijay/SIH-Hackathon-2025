@@ -1,5 +1,5 @@
 // PASTE YOUR MODEL LINK BACK IN HERE!
-const URL = "https://teachablemachine.withgoogle.com/models/S84arzio_/"; 
+const URL = "https://teachablemachine.withgoogle.com/models/x7oOtXSkx/"; 
 
 let model, webcam, labelContainer, maxPredictions;
 
